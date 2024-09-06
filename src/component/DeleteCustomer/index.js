@@ -11,7 +11,7 @@ const DeleteCustomer = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.delete(`http://localhost:3000/api/customers/${customerId}`);
+      await axios.delete(`https://qwipo.onrender.com/api/customers/${customerId}`);
       alert('Customer Deleted Successfully');
     } catch (error) {
       console.error('Error deleting customer', error);
