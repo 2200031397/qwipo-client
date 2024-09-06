@@ -12,7 +12,7 @@ const ViewCustomer = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.get(`http://localhost:3000/api/customers/${customerId}`);
+      const response = await axios.get(`https://qwipo.onrender.com/api/customers/${customerId}`);
       setCustomer(response.data);
     } catch (error) {
       console.error('Error fetching customer', error);
