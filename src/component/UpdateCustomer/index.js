@@ -18,7 +18,7 @@ const UpdateCustomer = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:3000/api/customers/${customerId}`, customerData);
+      await axios.put(`https://qwipo.onrender.com/api/customers/${customerId}`, customerData);
       alert('Customer Updated Successfully');
     } catch (error) {
       console.error('Error updating customer', error);
