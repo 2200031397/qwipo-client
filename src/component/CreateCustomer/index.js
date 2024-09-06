@@ -36,7 +36,7 @@ const CreateCustomer = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3000/api/customers', customer);
+      await axios.post('https://qwipo.onrender.com/api/customers', customer);
       alert('Customer Created Successfully');
     } catch (error) {
       console.error('Error creating customer', error);
